@@ -7234,7 +7234,7 @@ public final class Client extends RSApplet {
         if (signlink.applet != null) {
             return signlink.openSocket(port);
         } else {
-            return new Socket(InetAddress.getByName(this.getCodeBase().getHost()), port);
+            return new Socket(InetAddress.getByName("127.0.0.1"), port);
         }
     }
 
